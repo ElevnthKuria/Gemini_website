@@ -294,9 +294,13 @@ button {
 /*--      end sidebar  navigation--*/
 
 .logo  img {
+     position: absolute;
      max-width: 80%;
      padding-top: 0px;
+     top: 12pt;
+     left: 24pt;
      size: 20px;
+     z-index: 100;
 }
 
 ul.conat_info li {
@@ -333,7 +337,7 @@ ul.conat_info li a:hover {
 
 .banner_main {
      background: url(../images/banner-01.png);
-     padding: 300px 0px 0px 0px;
+     padding: 300px 20px 0px 0px;
      background-size: auto 78%;
      background-repeat: no-repeat;
      min-height: 1150px;
@@ -500,7 +504,7 @@ ul.conat_info li a:hover {
 
 /** about section **/
 
-.about {
+/* .about {
      background-color: #ffffff;
      margin-top: -160px;
      padding-bottom: 800px;
@@ -512,22 +516,34 @@ ul.conat_info li a:hover {
 
 .about .about_img figure img {
      width: 100%;
-}
+} */
 
 .about .titlepage p {
-     padding: 30px 0px;
+     padding-bottom : 30px;
      color: #2a2a2c;
-     font-size: 17px;
-     line-height: 32px;
-     font-weight: 400;
+     font-size: 16px;
+     line-height: 3px;
+     font-weight: 0;
      display: inline-block;
+     /* width: 100%;
+     float: center;
+     color: #fffcf4;
+     font-size: 18px;
+     margin-left: 2000; */
+}
+
+.about .choice_main {
+     width: 100%;
+     padding-top: 100px;
+     position: bottom;
+     float: left;
 }
 .layout_padding {
      padding-top: 100px;
      padding-bottom: 500px;
  }
 
-.project_section {
+.about_section {
      width: 100%;
      float: left;
      background-image: url(../images/img-4-01.png);
@@ -546,7 +562,7 @@ ul.conat_info li a:hover {
      font-weight: bold;
  }
  
- .project_section .titlepage {
+ .about_section .titlepage {
      width: 61%;
      float: left;
      color: #fffcf4;
@@ -590,8 +606,9 @@ ul.conat_info li a:hover {
 
 .service {
      background-color: #f7f7f9;
-     margin-top: 100px;
-     padding-top: 0px;
+     margin-top: 900px;
+     padding-top: 20px;
+     
 }
 
 .service .titlepage {
@@ -608,20 +625,22 @@ ul.conat_info li a:hover {
 }
 
 .service_main {
-     display: flex;
-     flex-wrap: nowrap;
+     display: inline-flex;
+     padding-RIGHT: 15%;
+     flex-wrap: wrap !important;
 }
 
 .service_box {
-     text-align: center;
-     width: 16.3%;
+     text-align: center !important;
+     width: 100%;
      margin-top: 30px !important;
+     padding-left: 0px;
 }
 
 .service_box i {
-     width: 160px;
-     display: block;
-     height: 160px;
+     width: 140px;
+     display: inline-block;
+     height: 140px;
      border-radius: 200px;
 }
 
@@ -636,6 +655,7 @@ ul.conat_info li a:hover {
      margin-top: 25px;
      padding: 0;
      font-weight: 500;
+     text-align: center;
 }
 
 .service_box h4:hover {
@@ -669,20 +689,22 @@ ul.conat_info li a:hover {
 /** choose section 2 **/
 .choose_section_2 {
      width: 100%;
-     float: left;
      background-color: #EA1E35;
-     height: auto;
+     height: 100%;
      padding: 90px 0px;
+     padding-bottom: 150px;
      margin-top: 30px;
+     margin-bottom: 30px;
  }
-
+ 
  .rated_text {
      width: 100%;
      float: left;
      font-size: 30px;
      color: #fefefd;
      font-weight: bold;
-     padding-bottom: 0px;
+     padding-bottom: -80px;
+     justify-content: center;
  }
  
  .house_text {
@@ -694,9 +716,9 @@ ul.conat_info li a:hover {
      margin: 0px;
      text-transform: uppercase;
  }
- 
+/* /*  
 /** vehicles section **/
-
+/*
 .vehicles {
      background-color: #fff;
      padding: 70px 0 155px 0;
@@ -793,13 +815,13 @@ ul.conat_info li a:hover {
      margin: 0 auto;
      padding-top: 150px;
 }
-
+ */
 
 /** end vehicles section **/
 
 
 /** testimonial section **/
-
+/* 
 .testimonial {
      padding: 90px 0 90px 0;
      background-color: #f86c0f;
@@ -906,15 +928,18 @@ ul.conat_info li a:hover {
      padding-left: 15px;
 }
 
-
-/** end testimonial section **/
+*/
+/* end testimonial section * */ 
 
 
 /** choose section **/
 
 .choose {
      background-color: #fff;
+     margin-top: 90px;
      padding-top: 90px;
+     margin-bottom: 90px;
+     padding-bottom: 90px;
 }
 
 .choose .titlepage {
@@ -957,11 +982,11 @@ ul.conat_info li a:hover {
 }
 
 .contact .titlepage {
-     text-align: left;
      padding-bottom: 60px;
 }
 
 .main_form {
+     align-items: right;
      background: #fff;
      border-radius: 20px;
      max-width: 426px;
@@ -980,6 +1005,7 @@ ul.conat_info li a:hover {
      font-size: 18px;
      font-weight: normal;
      padding: 0 15px;
+     align-items: right;
 }
 
 .main_form .contactusmess {
@@ -1042,7 +1068,7 @@ ul.conat_info li a:hover {
 
 .footer {
      background: #f7f7f9;
-     margin-top: 90px;
+     margin-top: 50px;
      padding-top: 90px;
      text-align: center;
 }
@@ -1058,17 +1084,17 @@ ul.location_icon li {
      text-align: left;
      padding-bottom: 35px;
      float: left;
-     display: flex;
-     align-items: center;
+     align-items: flex-start;
 }
 
-ul.location_icon li a {
+.map_text .fa fa-map-marker {
      font-size: 30px;
      color: #EA1E35;
      line-height: 40px;
      padding-right: 16px;
      float: left;
 }
+
 
 ul.location_icon li a:hover {
      color: #353535;
