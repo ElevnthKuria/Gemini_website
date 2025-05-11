@@ -150,7 +150,11 @@ a,
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
 }
-
+/* @media only screen and (max-width: 400px) {
+     img {
+       width: 100%;
+     }
+   } */
 img {
      max-width: 100%;
      height: auto;
@@ -521,10 +525,11 @@ ul.conat_info li a:hover {
 .about .titlepage p {
      padding-bottom : 30px;
      color: #2a2a2c;
-     font-size: 16px;
+     font-size: 14px;
      line-height: 3px;
      font-weight: 0;
-     display: inline-block;
+     display: block;
+     padding-top: 203px;
      /* width: 100%;
      float: center;
      color: #fffcf4;
@@ -538,22 +543,29 @@ ul.conat_info li a:hover {
      position: bottom;
      float: left;
 }
-.layout_padding {
+.about .layout_padding {
      padding-top: 100px;
-     padding-bottom: 500px;
+     padding-bottom: 100px;
  }
+.about {
+     background-image: url('../images/img-4-01.png');
+     background-size:contain;
+     background-position: center;
+     height: 100vh; /* Full viewport height */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-align: center;
+     padding-right: -300px;
+}
 
-.about_section {
-     width: 100%;
-     float: left;
-     background-image: url(../images/img-4-01.png);
-     height: 800px;
-     background-size: 100%;
-     margin-top: 70px;
-     padding-bottom: 80px;
-     background-repeat: no-repeat;
- }
- 
+@media screen and (max-width: 400px) {
+     .text-section {
+       height: auto;
+       padding: 20px;
+     }
+}
  .partner_text {
      width: 100%;
      float: left;
@@ -563,11 +575,15 @@ ul.conat_info li a:hover {
  }
  
  .about_section .titlepage {
-     width: 61%;
+     width: 100%;
      float: left;
      color: #fffcf4;
-     font-size: 22px;
-     margin-left: 0;
+     font-size: 18px;
+     /* margin-top: 200; */
+ }
+ .about_section .titlepage a:hover {
+     color: #000;
+     background-color: None;
  }
  
  .choice_main {
@@ -577,7 +593,7 @@ ul.conat_info li a:hover {
  }
  
  .choose_bt a {
-     width: 18%;
+     width: 100%;
      float: left;
      background-color: #041d2c;
      color: #fffcf4;
@@ -606,9 +622,9 @@ ul.conat_info li a:hover {
 
 .service {
      background-color: #f7f7f9;
-     margin-top: 900px;
+     margin-top: 50px;
      padding-top: 20px;
-     
+     justify-content: center;
 }
 
 .service .titlepage {
@@ -624,18 +640,39 @@ ul.conat_info li a:hover {
      padding-top: 20px;
 }
 
-.service_main {
-     display: inline-flex;
-     padding-RIGHT: 15%;
-     flex-wrap: wrap !important;
-}
+/* .service_main {
+     display: grid;;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     gap: 20px;
+} */
+@media (min-width: 400px) {
+     .service_main {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     /* margin-left: 150px; */
+     align-content: center;
+     }
+   }
+   
+   @media (min-width: 900px) {
+     .service_main {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     align-content: center;
+     }
+   }
 
 .service_box {
+     background-color:none;
+     padding: 15px;
+     text-align: center;
+}
+/* .service_box {
      text-align: center !important;
      width: 100%;
      margin-top: 30px !important;
      padding-left: 0px;
-}
+} */
 
 .service_box i {
      width: 140px;
