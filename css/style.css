@@ -1464,3 +1464,45 @@ ul.location_icon li a:hover {
 
 /** end footer **/
 
+.css-cvvw2d {
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-name: animation-1wmrf3h;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+.css-11m1y2v {
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+  animation-name: animation-1wmrf3h;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.css-1k1vtk8 {
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 1000ms;
+  animation-name: animation-1wmrf3h;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center !important;
+}
