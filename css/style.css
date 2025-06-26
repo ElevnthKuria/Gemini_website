@@ -298,8 +298,8 @@ button {
 /*--      end sidebar  navigation--*/
 
 .logo  img {
-     position: absolute;
-     max-width: 80%;
+     position: relative;
+     max-width: 50%;
      padding-top: 0px;
      top: 12pt;
      left: 24pt;
@@ -1363,7 +1363,7 @@ ul.location_icon li a:hover {
   width: 100%;
   height: auto;
 }
-
+/* 
 .overlay {
   position: absolute;
   bottom: 0;
@@ -1378,7 +1378,7 @@ ul.location_icon li a:hover {
 
 .map:hover .overlay {
   height: 100%;
-}
+} */
 
 .hover_text{
   white-space: nowrap; 
